@@ -1,0 +1,16 @@
+{
+  "students": [
+    {
+      "name": "ABDELALI ES-SARRAJ",
+      "birthday": "1993-05-28",
+      "note": "20",
+      "id": 1
+    },
+    {
+      "name": "MOHAMMED ES-SARRAJ",
+      "birthday": "1975-06-24",
+      "note": "10",
+      "id": 2
+    }
+  ]
+}

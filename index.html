@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMASCRIPT-DEMO</title>
+    
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="js/main.js" defer type="module"></script>
+</head>
+<body>
+    <div class="min-w-screen min-h-screen flex justify-center bg-gray-100 font-sans overflow-hidden">
+        <div id="app" class=" w-11/12">
+            <div class="form-data shadow-md rounded my-6 p-5 bg-white">
+                
+                <form method="post" onsubmit="return false">
+                    <div class="flex justify-between items-center mb-2">
+                        <h1 class="text-xl text-slate-500 uppercase underline font-semibold">form of student</h1>
+                        <button type="submit" id="create" class="flex gap-2 uppercase items-center justify-center bg-emerald-100 text-emerald-700 py-2 px-4 rounded-full shadow-sm"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>                          
+                            Add Student
+                        </button>
+                    </div>
+
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 mt-5">Full Name</label>
+                    <div class="flex">
+                        <div class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
+                            </svg> 
+                        </div>
+                        <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-r-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Jhon Doe">
+                        <br>
+                    </div>
+
+                    <label for="birthday" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 mt-5">Birthday</label>
+                    <div class="flex">
+                        <div class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                            </svg>                              
+                        </div>
+                        <input type="date" id="birthday" name="birthday" class="form-input rounded-none rounded-r-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="01/01/2000">
+                    </div>
+
+                    <label for="note" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 mt-5">Note</label>
+                    <div class="flex">
+                        <div class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0" />
+                            </svg>                                                           
+                        </div>
+                        <input type="number" id="note" name="note" step="0.1" min="0" max="20" class="form-input rounded-none rounded-r-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="10">
+                    </div>
+                </form>
+            </div>
+
+            <div class="table-list shadow-md rounded my-6 p-5 bg-white">
+                <div class="flex justify-between items-center mb-2">
+                    <h1 class="text-xl text-slate-500 uppercase underline font-semibold">list of students</h1>
+                    <button id="refresh" class="flex gap-2 uppercase items-center justify-center bg-gray-100 py-2 px-4 rounded-full"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                        </svg>
+                        Refresh
+                    </button>
+                </div>
+                <table class="table-auto min-w-max w-full rounded-md overflow-hidden shadow">
+                    <thead>
+                      <tr class="bg-gray-200 text-gray-800 uppercase text-sm leading-normal">
+                        <th class="filter-element py-3 px-6 text-left" data-column="id">id <span class="inline-flex"></span></th>
+                        <th class="filter-element py-3 px-6 text-left" data-column="name">Name <span class="inline-flex"></span></th>
+                        <th class="filter-element py-3 px-6 text-left" data-column="birthday">Age <span class="inline-flex"></span></th>
+                        <th class="filter-element py-3 px-6 text-left" data-column="note">Note <span class="inline-flex"></span></th>
+                        <th class="flex-auto py-3 px-6 text-center">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-rows">
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
